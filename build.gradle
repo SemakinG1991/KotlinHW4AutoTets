@@ -1,6 +1,7 @@
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.7.10'
     id 'application'
+    id 'jacoco'
 }
 
 group = 'ru.netology'
@@ -14,9 +15,6 @@ dependencies {
     testImplementation 'org.jetbrains.kotlin:kotlin-test'
 }
 
-test {
-    useJUnitPlatform()
-}
 
 compileKotlin {
     kotlinOptions.jvmTarget = '1.8'
