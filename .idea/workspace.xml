@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde05b23-89df-437e-a449-608696fd8c93" name="Changes" comment="My first Autotest">
+    <list default="true" id="dde05b23-89df-437e-a449-608696fd8c93" name="Changes" comment="9 Autotests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/ComissionTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ComissionTest.kt" afterDir="false" />
@@ -62,9 +62,10 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="gradle test jacocoTestReport" />
+      <command value="gradle test :jacocoTestReport" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ComissionTest">
+  <component name="RunManager" selected="Gradle.KotlinHW4AutoTets [test :jacocoTestReport]">
     <configuration name="ComissionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -79,6 +80,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;ComissionTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ComissionTest.testMaestroWrong" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ComissionTest.testMaestroWrong&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -111,7 +135,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ComissionTest.testMasterMaestroFree" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="KotlinHW4AutoTets [test :jacocoTestReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -122,37 +146,13 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ComissionTest.testMasterMaestroFree&quot;" />
+            <option value="test" />
+            <option value=":jacocoTestReport" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ComissionTest.testMasterMaestroMonthlyLimits" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ComissionTest.testMasterMaestroMonthlyLimits&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -167,10 +167,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.ComissionTest" />
-        <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Gradle.ComissionTest.testMasterMaestroMonthlyLimits" />
+        <item itemvalue="Gradle.ComissionTest.testMaestroWrong" />
         <item itemvalue="Gradle.ComissionTest.testMasterMaestroDailyLimits" />
-        <item itemvalue="Gradle.ComissionTest.testMasterMaestroFree" />
+        <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.KotlinHW4AutoTets [test :jacocoTestReport]" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685699220641</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="9 Autotests">
+      <created>1685948978394</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685948978394</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,6 +221,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="My first Autotest" />
-    <option name="LAST_COMMIT_MESSAGE" value="My first Autotest" />
+    <MESSAGE value="9 Autotests" />
+    <option name="LAST_COMMIT_MESSAGE" value="9 Autotests" />
   </component>
 </project>

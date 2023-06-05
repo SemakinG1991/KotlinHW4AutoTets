@@ -2,14 +2,10 @@ const val ERROR_CARD = -1
 const val ERROR_LIMIT = -2
 
 fun main(args: Array<String>) {
-
-    println("Ex1: Разная комиссия для разных платежных систем.")
-    print("Ваша комиссия составит: ")
-    println(calcComission("Mastercard", 20_000, transfer = 70_000))  //ВЫБЕРИТЕ вариант
-    //println(calcComission(transfer = 100_000))
+    println(calcComission("Mastercard", 20_000, transfer = 70_000))
 }
 
-fun calcComission(typeCard: String = "VK Pay", earlyTransfer: Int = 0, transfer: Int) : Int {
+fun calcComission(typeCard: String , earlyTransfer: Int , transfer: Int) : Int {
     return when (typeCard) {
         "Mastercard", "Maestro" -> when {
             transfer > 150_000 || earlyTransfer + transfer > 600_000 -> ERROR_LIMIT
@@ -27,7 +23,6 @@ fun calcComission(typeCard: String = "VK Pay", earlyTransfer: Int = 0, transfer:
             transfer > 15_000 || earlyTransfer + transfer > 40_000 -> ERROR_LIMIT
             else -> 0
         }
-
         else -> ERROR_CARD
     }
 }

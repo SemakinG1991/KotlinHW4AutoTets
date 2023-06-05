@@ -14,7 +14,7 @@ class ComissionTest {
     }
     @Test
     fun testMasterMaestroComission() {
-        val typecard = "Mastercard"
+        val typecard = "Maestro"
         val earlytranfer = 0
         val transfer = 80_000
 
@@ -22,8 +22,17 @@ class ComissionTest {
         assertEquals(500, result)
     }
     @Test
-    fun testMasterMaestroWrong() {
+    fun testMasterWrong() {
         val typecard = "MasterCard"
+        val earlytranfer = 10_000
+        val transfer = 0
+
+        val result = calcComission(typecard, earlytranfer, transfer)
+        assertEquals(ERROR_CARD, result)
+    }
+    @Test
+    fun testMaestroWrong() {
+        val typecard = "Maestra"
         val earlytranfer = 10_000
         val transfer = 0
 
@@ -40,13 +49,32 @@ class ComissionTest {
     }
     @Test
     fun testMasterMaestroMonthlyLimits() {
-        val typecard = "Mastercard"
+        val typecard = "Maestro"
         val earlytranfer = 610_000
         val transfer = 80_000
         val result = calcComission(typecard, earlytranfer, transfer)
         assertEquals(ERROR_LIMIT, result)
     }
     //VISA
+
+    @Test
+    fun testVisaWrong() {
+        val typecard = "Vissa"
+        val earlytranfer = 10_000
+        val transfer = 0
+
+        val result = calcComission(typecard, earlytranfer, transfer)
+        assertEquals(ERROR_CARD, result)
+    }
+    @Test
+    fun testMirWrong() {
+        val typecard = "Mirr"
+        val earlytranfer = 10_000
+        val transfer = 0
+
+        val result = calcComission(typecard, earlytranfer, transfer)
+        assertEquals(ERROR_CARD, result)
+    }
     @Test
     fun testVisaMirDailyLimits() {
         val typecard = "Visa"
@@ -57,7 +85,7 @@ class ComissionTest {
     }
     @Test
     fun testVisaMirMonthlyLimits() {
-        val typecard = "Visa"
+        val typecard = "Mir"
         val earlytranfer = 615_000        //615000
         val transfer = 10_000
         val result = calcComission(typecard, earlytranfer, transfer)
@@ -80,6 +108,33 @@ class ComissionTest {
 
         val result = calcComission(typecard, earlytranfer, transfer)
         assertEquals(35, result)  //35
+    }
+
+    //VK
+    @Test
+    fun testVKPayDailyLimits() {
+        val typecard = "VK Pay"
+        val earlytranfer = 0
+        val transfer = 16_000
+        val result = calcComission(typecard, earlytranfer, transfer)
+        assertEquals(ERROR_LIMIT, result)
+    }
+    @Test
+    fun testVKPayMonthlyLimits() {
+        val typecard = "VK Pay"
+        val earlytranfer = 40_000
+        val transfer = 1_000
+        val result = calcComission(typecard, earlytranfer, transfer)
+        assertEquals(ERROR_LIMIT, result)
+    }
+    @Test
+    fun testVKPayFree() {
+        val typecard = "VK Pay"
+        val earlytranfer = 10_000
+        val transfer = 1000
+
+        val result = calcComission(typecard, earlytranfer, transfer)
+        assertEquals(0, result)
     }
 
 }
