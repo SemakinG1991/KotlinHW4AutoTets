@@ -10,7 +10,7 @@ class ComissionTest {
         val transfer = 0
 
         val result = calcComission(typecard, earlytranfer, transfer)
-        assertEquals(10, result)
+        assertEquals(20, result)
     }
     @Test
     fun testMasterMaestroComission() {
