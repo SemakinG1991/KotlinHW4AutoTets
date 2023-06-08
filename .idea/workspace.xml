@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dde05b23-89df-437e-a449-608696fd8c93" name="Changes" comment="84percent Autotests">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="dde05b23-89df-437e-a449-608696fd8c93" name="Changes" comment="84percent Autotests Error" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +61,7 @@
       <command value="gradle test :jacocoTestReport" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.KotlinHW4AutoTets [test :jacocoTestReport]">
+  <component name="RunManager" selected="Gradle.ComissionTest">
     <configuration name="ComissionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -133,7 +131,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="KotlinHW4AutoTets [test :jacocoTestReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ComissionTest.testMasterMaestroFree" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -144,13 +142,14 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="test" />
-            <option value=":jacocoTestReport" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ComissionTest.testMasterMaestroFree&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -165,10 +164,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.ComissionTest" />
+        <item itemvalue="Gradle.ComissionTest.testMasterMaestroFree" />
         <item itemvalue="Gradle.ComissionTest.testMaestroWrong" />
         <item itemvalue="Gradle.ComissionTest.testMasterMaestroDailyLimits" />
         <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Gradle.KotlinHW4AutoTets [test :jacocoTestReport]" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +215,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685986545601</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="84percent Autotests">
+      <created>1686209611327</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686209611327</updated>
+    </task>
+    <task id="LOCAL-00007" summary="84percent Autotests Error">
+      <created>1686209662859</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686209662859</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,6 +248,7 @@
     <MESSAGE value="My first Autotest" />
     <MESSAGE value="9 Autotests" />
     <MESSAGE value="84percent Autotests" />
-    <option name="LAST_COMMIT_MESSAGE" value="84percent Autotests" />
+    <MESSAGE value="84percent Autotests Error" />
+    <option name="LAST_COMMIT_MESSAGE" value="84percent Autotests Error" />
   </component>
 </project>
